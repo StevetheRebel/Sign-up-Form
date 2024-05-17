@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-up Form</title>
+    <link rel="shortcut icon" href="assets/Odin logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="logo">
+        <img src="assets/Odin logo.png" alt="odin-logo" />
+        <h1>ODIN</h1>
+      </div>
+      <div class="form-info">
+        <p>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. Sign up
+          <i>now</i> to get started.
+          <br />
+          <br />
+          You <i>know</i> you want to.
+        </p>
+        <div class="form-area">
+          <h3>Let's do this!</h3>
+          <form action="#" method="post">
+            <fieldset class="name">
+              <div class="first-name">
+                <label for="first-name">first name</label>
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  placeholder="first name"
+                  minlength="1"
+                />
+              </div>
+              <div class="last-name">
+                <label for="last-name">last name</label>
+                <input
+                  type="text"
+                  name="last-name"
+                  id="last-name"
+                  placeholder="last name"
+                  minlength="1"
+                />
+              </div>
+            </fieldset>
+            <fieldset class="contact">
+              <div class="email-input">
+                <label for="email">email</label>
+                <small>Format: example@site.com</small>
+                <input type="email" name="email" id="email" />
+              </div>
+              <div class="phone-number-area">
+                <label for="phone-no">phone number</label
+                ><small>Format: (123)-456-7890</small>
+                <input
+                  type="tel"
+                  name="phone-no"
+                  id="phone-no"
+                  placeholder=""
+                  maxlength="10"
+                />
+              </div>
+            </fieldset>
+            <fieldset class="passinfo">
+              <div class="pass-cnt">
+                <div class="pass-word">
+                  <label for="pass1">password</label>
+                  <input type="password" name="password1" id="pass1" />
+                </div>
+                <div class="pass-word">
+                  <label for="pass2">rewrite password</label>
+                  <input type="password" name="password2" id="pass2" />
+                </div>
+              </div>
+              <div class="pass-conditions">
+                <p id="char"> <i class='bx bxs-check-circle'></i> least 8 characters</p>
+                <p id="cap"> <i class='bx bxs-check-circle'></i> At least one letter capitalized</p>
+                <p id="num"> <i class='bx bxs-check-circle'></i> At least one number</p>
+                <p id="spec-char"> <i class='bx bxs-check-circle'></i> One special character</p>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <button type="submit">Create Account</button>
+        <p class="login">Already have an account? <a href="./">Log in</a></p>
+      </div>
+    </main>
+  </body>
+</html>
