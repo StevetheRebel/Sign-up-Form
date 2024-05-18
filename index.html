@@ -56,7 +56,12 @@
               <div class="email-input">
                 <label for="email">email</label>
                 <small>Format: example@site.com</small>
-                <input type="email" name="email" id="email" />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="email"
+                />
               </div>
               <div class="phone-number-area">
                 <label for="phone-no">phone number</label
@@ -65,7 +70,7 @@
                   type="tel"
                   name="phone-no"
                   id="phone-no"
-                  placeholder=""
+                  placeholder="phone number"
                   maxlength="10"
                 />
               </div>
@@ -74,25 +79,61 @@
               <div class="pass-cnt">
                 <div class="pass-word">
                   <label for="pass1">password</label>
-                  <input type="password" name="password1" id="pass1" />
+                  <input
+                    type="password"
+                    placeholder="password"
+                    name="password1"
+                    id="pass1"
+                  />
                 </div>
                 <div class="pass-word">
-                  <label for="pass2">rewrite password</label>
-                  <input type="password" name="password2" id="pass2" />
+                  <label for="pass2">confirm password</label>
+                  <input
+                    type="password"
+                    placeholder="confirm password"
+                    name="password2"
+                    id="pass2"
+                  />
                 </div>
               </div>
               <div class="pass-conditions">
-                <p id="char"> <i class='bx bxs-check-circle'></i> least 8 characters</p>
-                <p id="cap"> <i class='bx bxs-check-circle'></i> At least one letter capitalized</p>
-                <p id="num"> <i class='bx bxs-check-circle'></i> At least one number</p>
-                <p id="spec-char"> <i class='bx bxs-check-circle'></i> One special character</p>
+                <p id="char">
+                  <i class="bx bxs-check-circle" id="char"></i> Least 8
+                  characters
+                </p>
+                <p id="cap">
+                  <i class="bx bxs-check-circle" id="charCap"></i> At least one
+                  letter capitalized
+                </p>
+                <p id="num">
+                  <i class="bx bxs-check-circle" id="num"></i> At least one
+                  number
+                </p>
+                <p id="spec-char">
+                  <i class="bx bxs-check-circle" id="specChar"></i> One special
+                  character
+                </p>
               </div>
             </fieldset>
           </form>
         </div>
-        <button type="submit">Create Account</button>
-        <p class="login">Already have an account? <a href="./">Log in</a></p>
+        <button type="submit" id="submit-btn">Create Account</button>
+        <p class="login">Already have an account? <a href="https://github.com/StevetheRebel/Sign-up-Form" target="_blank">Log in</a></p>
+      </div>
+      <div class="confirm-ctn">
+        <i class="bx bxs-check-circle"></i>
+        <div class="message">
+          <p>Registration successful</p>
+          <p>Look out for our email</p>
+        </div>
+      </div>
+      <div class="error-ctn">
+        <i class='bx bxs-x-circle'></i>
+        <p>Something is missing</p>
+        <p class="error-place"></p>
       </div>
     </main>
+
+    <script src="script.js"></script>
   </body>
 </html>
